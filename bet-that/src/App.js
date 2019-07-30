@@ -1,29 +1,29 @@
 import React from 'react';
 import './App.css';
 // import axios from 'axios'
-// import Game from './Components/Game/Game'
-import Data from './data.js'
+import ListOfGames from './Components/ListOfGames/ListOfGames'
+import Header from './Components/Header/Header'
+import Footer from './Components/Footer/Footer'
+import apiData from './Components/data'
 
 
 class App extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      odds: Data,  
-    }
-    console.log(this.state.odds.data[0].teams[0])
-    console.log(this.state.odds.data[0].teams[1])
-  }
-  // const team1 = this.state.odds.data[0].teams[0]
-  
-  // componentDidMount() {
-    //   // console.log(Data)
-    // }
+  // constructor(props) {
+  //   super(props)
+  //   this.state = {
+  //     odds: Data,  
+  //     team1: Data.data[0].teams[0]
+  //   }
+  //   console.log(this.state.odds.data[0].teams[0])
+  //   console.log(this.state.odds.data[0].teams[1])
+  // }
     render(){
+      const{data} = apiData
     return (
       <div className="App">
-        {/* <Game value={team1}/> */}
-       
+        <Header/>
+        <ListOfGames games={data}/>
+        <Footer/>
       </div>
     );
 

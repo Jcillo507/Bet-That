@@ -1,4 +1,4 @@
- const data = {
+ const apiData = {
     "success": true,
     "data": [{
         "sport_key": "baseball_mlb",
@@ -276,4 +276,4 @@
     }]
 }
 
-export default data
+module.exports =  apiData
