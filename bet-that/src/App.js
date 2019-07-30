@@ -23,7 +23,7 @@ class App extends React.Component {
     return (
       <div className="App">
         {/* <Game value={team1}/> */}
-        hello
+       
       </div>
     );
 
