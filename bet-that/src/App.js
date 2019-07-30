@@ -8,15 +8,7 @@ import apiData from './Components/data'
 
 
 class App extends React.Component {
-  // constructor(props) {
-  //   super(props)
-  //   this.state = {
-  //     odds: Data,  
-  //     team1: Data.data[0].teams[0]
-  //   }
-  //   console.log(this.state.odds.data[0].teams[0])
-  //   console.log(this.state.odds.data[0].teams[1])
-  // }
+
     render(){
       const{data} = apiData
     return (

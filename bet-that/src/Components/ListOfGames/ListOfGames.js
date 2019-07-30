@@ -11,17 +11,22 @@ class ListOfGames extends React.Component{
          
     }
     render(){
-        console.log(this.props)
-      const games = this.props.games.map(odds =>
-        <Game 
-        key={odds.index}
-        team1={odds.team1}
-        team2={odds.team2}
-        time={odds.time}
-        team1Odds={odds.team1Odds}
-        team2Odds={odds.team2Odds}
-        />
+        // console.log(this.props)
+      const games = this.props.games.map(game=>{
+        console.log(game)
+       return ( 
+            < Game
+                key = { game.index }
+                team1 = { game.teams[0] }
+                team2 = { game.teams[1] }
+                time = { game.commence_time }
+                team1Odds = { game.sites[0].odds.h2h[0] }
+                team2Odds={game.sites[0].odds.h2h[1]}
+                />
+            )
+    }
         )
+    
 
        return(
            <div>
@@ -30,7 +35,7 @@ class ListOfGames extends React.Component{
                   {games}
                {/* <Game 
                     key={this.state.odds.data.length}
-                    team1={this.state.odds.}
+                    team1={this.state.odds.data[0].teams[0]}
                     team2={this.state.odds.data[0].teams[1]}
                     time={this.state.odds.data[0].commence_time}
                     team1Odds={this.state.odds.data[0].sites[0].odds.h2h[0]}
