@@ -1,7 +1,12 @@
 .background{
     background-color: #FFEECA;
+    
+    
 }
-
+.game-container{
+    display: flex;
+    flex-direction: column;
+}
 .game-title{
     color: #051937;
 }

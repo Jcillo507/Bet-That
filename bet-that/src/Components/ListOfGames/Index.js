@@ -1,6 +1,5 @@
 import React from 'react'
 import Game from '../Game/Index'
-
 import './ListOfGames.css'
 import data from "../data"
 
@@ -10,7 +9,6 @@ class ListOfGames extends React.Component{
         this.state = {
             odds: data, 
         }   
-         
     }
     render(){
         // console.log(this.props)
@@ -27,9 +25,9 @@ class ListOfGames extends React.Component{
             )
     }
         )
-
        return(
            <div className="background">
+               <div className="game-container">
                <h1 className="game-title">Today's Games</h1>
                <ul>
                   {games}
@@ -40,9 +38,9 @@ class ListOfGames extends React.Component{
                     time={this.state.odds.data[0].commence_time}
                     team1Odds={this.state.odds.data[0].sites[0].odds.h2h[0]}
                     team2Odds={this.state.odds.data[0].sites[0].odds.h2h[1]}
-               /> */}
-                   
+                /> */}
                </ul>
+                </div>
            </div>
        )
     }
