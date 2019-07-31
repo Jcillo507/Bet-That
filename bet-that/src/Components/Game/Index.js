@@ -1,13 +1,10 @@
 import React from 'react'
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import './Game.css'
 
 
 const Game = (props)=>{
     return(
-        <Router>
             <div className ="game-container">
-                <Link className="link" to="./BetForm">
                     <button className="button">
                         <div className="team-container">
                             <p className="team">{props.team1}</p>
@@ -19,10 +16,7 @@ const Game = (props)=>{
                             <p className="team-odds">{props.team2Odds}</p>
                         </div>
                     </button>
-                </Link>
-                <Route path="./Components/BetForm"/>
             </div>
-         </Router>
     )
 }
 

@@ -22,8 +22,8 @@ class BetInput extends React.Component{
                     <h1>{this.state.betAmount}</h1>
                 </form>
              </div> 
-    )
-}
+        )
+    }
 }
 export default BetInput
 
