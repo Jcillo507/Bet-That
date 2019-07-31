@@ -1,5 +1,7 @@
 import React from 'react'
-import Game from '../Game/Game'
+import Game from '../Game/Index'
+
+import './ListOfGames.css'
 import data from "../data"
 
 class ListOfGames extends React.Component{
@@ -13,10 +15,9 @@ class ListOfGames extends React.Component{
     render(){
         // console.log(this.props)
       const games = this.props.games.map(game=>{
-        console.log(game)
        return ( 
             < Game
-                key = { game.index }
+               key={game.commence_time }
                 team1 = { game.teams[0] }
                 team2 = { game.teams[1] }
                 time = { game.commence_time }
@@ -26,11 +27,10 @@ class ListOfGames extends React.Component{
             )
     }
         )
-    
 
        return(
-           <div>
-               <h1>Today's Games</h1>
+           <div className="background">
+               <h1 className="game-title">Today's Games</h1>
                <ul>
                   {games}
                {/* <Game 

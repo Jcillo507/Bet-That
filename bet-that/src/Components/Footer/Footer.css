@@ -1,0 +1,12 @@
+.footer-container{
+    position: sticky;
+    bottom: 0;
+    height:8vh;
+    width:100vw;
+    background: #051937;
+    color: lightblue;
+}
+
+.footer-text{
+    font-size: 4vh;
+}

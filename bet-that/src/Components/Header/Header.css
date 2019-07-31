@@ -1,0 +1,11 @@
+.header-container{
+    background-color: #051937;
+    height: 10vh;
+    display: flex;
+}
+
+.title{
+    font-size: 8vh;
+    color: lightblue;
+}
+

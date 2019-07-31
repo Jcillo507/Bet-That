@@ -1,0 +1,37 @@
+.game-container{
+    display: flex;
+}
+.button{
+    width: 70vw;
+    display: flex;
+    font-size: 2vh;
+    height: 20vh;
+    background-color: #051937;
+    border: 5px solid #007789;
+    border-radius: 2pc;
+    margin: 5px;
+
+}
+
+.team-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.team{
+    padding: 20px;
+    color: lightblue;
+}
+.odds-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.team-odds {
+    padding: 20px;
+    color: lightblue;
+}
+
+.link{
+    text-decoration: none;
+}
