@@ -2,14 +2,28 @@ import React from 'react'
 import { Route, Link } from "react-router-dom";
 import BetForm from '../BetForm/Index'
 import ListOfGames from '../ListOfGames/Index.js'
-import apiData from '../data'
+import {ApiData} from '../data'
 
 import './Home.css'
 
 class Home extends React.Component{
+    constructor(props){
+        super(props)
+        this.state={
+            data:[]
+        }
+    }
+    componentDidMount() {
+        this.getData()
+    }
+    getData = async () =>{
+        const data = await ApiData()
+        this.setState({data :data.data})
+        console.log(data)
+    }
     render(){
-    const{data} = apiData
-
+        
+  
         return(
             <div className="background">
                 <div className="bg-container">
@@ -28,7 +42,7 @@ class Home extends React.Component{
                             </div>
                     </div>
                 } /> 
-                    <Route path="/list-of-games" component={() => <ListOfGames games={data} />} />
+                    <Route path="/list-of-games" component={() => <ListOfGames games={this.state.data} />} />
                     <Route path="/bet-form" component={(props) => <BetForm {...props}/>} />
                 </div>
             </div>

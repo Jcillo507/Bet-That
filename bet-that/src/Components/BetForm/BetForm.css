@@ -6,17 +6,16 @@
     margin-top: 15vh;
     background-color: #051937;
     color: #ADD8E6;
-    
-
 }
 .form-text{
     font-size: 3vh;
 }
+
 .form-button{
     display: flex;
     height: 4vh;
     margin: 30px;
-    background-color:   
+    background-color: #ADD8E6;
 }
 .form-team{
     font-weight: 900;

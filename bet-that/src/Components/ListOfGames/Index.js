@@ -4,16 +4,19 @@ import { Link } from "react-router-dom";
 import Game from '../Game/Index'
 
 import './ListOfGames.css'
-import data from "../data"
+import { ApiData } from '../data';
+
 
 class ListOfGames extends React.Component{
     constructor(props) {
         super(props)
         this.state = {
-            odds: data, 
+            odds: ApiData, 
         }   
     }
+    
     render(){
+ 
         const games = this.props.games.map(game=>{
             return ( 
                 <Link className="link" to={{

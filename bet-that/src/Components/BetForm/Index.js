@@ -1,16 +1,14 @@
 import React from 'react'
 import BetInput from '../BetInput/Index'
 
-import data from "../data"
-
 import './BetForm.css'
 
 class BetForm extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            odds: data,
-            userPick:[],
+            // odds: ApiData,
+            userPick:[], 
         }
     }
     render(){
@@ -24,8 +22,6 @@ class BetForm extends React.Component {
                 userPick: this.props.location.state.team2Odds
             })
         }
-        
-        console.log(this.state.userPick, 'working bf28')
             return (
                 <div className="background">
                 <div className="form-container">
