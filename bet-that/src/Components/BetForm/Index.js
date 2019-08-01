@@ -10,19 +10,31 @@ class BetForm extends React.Component {
         super(props)
         this.state = {
             odds: data,
-            pick: "",
+            pickOne: "",
         }
     }
     render(){
-        const handleClick =()=>{
-            console.log('working')
+        const handleClickOne =()=>{
+            this.setState.pickOne = this.props.location.state.team1Odds
+            console.log('working bf19',)
         }
+        const handleClickTwo = () => {
+            console.log('working bg22')
+            this.setState.pick = this.props.location.state.team2Odds
+        }
+        console.log(this.state.pickOne)
         return (
             <div className="background">
                 <div className="form-container">
-                    <p>Choose Side</p>
-                    <button onClick={handleClick}>{this.props.location.state.team1} {this.props.location.state.team1Odds}</button>
-                    <button>{this.props.location.state.team2} {this.props.location.state.team2Odds}</button>
+                    <p className="form-text">Choose who you think would win</p>
+                    <button className="form-button"onClick={handleClickOne}>
+                        <span className="form-team">{this.props.location.state.team1}</span> 
+                        <span className="form-odds">{this.props.location.state.team1Odds}</span>
+                    </button>
+                    <button className="form-button" onClick={handleClickTwo}>
+                        <span className="form-team">{this.props.location.state.team2}</span> 
+                        <span className="form-odds">{this.props.location.state.team2Odds}</span>
+                    </button>
                     <BetInput/>
                 </div>
             </div>

@@ -1,7 +1,27 @@
 .form-container{
-    height:40vh;
-    width: 50vh;
+    display: flex;
+    flex-direction: column;
+    height:50vh;
+    width: 60vh;
     margin-top: 15vh;
     background-color: #051937;
     color: #ADD8E6;
+    
+
+}
+.form-text{
+    font-size: 3vh;
+}
+.form-button{
+    display: flex;
+    height: 4vh;
+    margin: 30px;
+    background-color:   
+}
+.form-team{
+    font-weight: 900;
+}
+
+.form-odds{
+    font-weight: 900;
 }

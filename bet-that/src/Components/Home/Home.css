@@ -1,21 +1,29 @@
 
 .path-container{
-    margin: 50px;
+    margin: 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: space-between;
     height: 25vh;
-    border: 2px solid black;
+    
 }
-
+.home-title{
+    font-size: 5vh;
+    margin: 10px;
+}
+.home-text{
+    font-size: 3vh;
+    margin: 10px;
+}
 .path-button{
-    height: 150px;
+    height: 30vh;
+    width: 30vw;
     padding: 20px;
     border-radius:20%;
+    font-size: 4vh;
     background-color: #051937;
     color:#ADD8E6;
-    /* margin: 40px; */
 }
 
 .text-container{
