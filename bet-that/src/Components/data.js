@@ -1,21 +1,5 @@
-//  import React from 'react'
-//  import axios from 'axios'
- 
-//  class apiData extends React.Component{
-//      constructor() {
-//          super()
-//          this.state = {
-//              apiData:[],
-//          }
-//  }
-//      componentDidMount() {
-//          axios.get(`https://api.the-odds-api.com/v3/odds/?sport=baseball_mlb&region=us&apiKey=460ffe30273e29401411c460e9ba6d62`)
-//              .then(res => {
-//                  const apiData = res.data;
-//                  this.setState({ apiData });
-//              })
-//      }
-//     }
+// import React from 'react'
+// import Axios from 'axios'
 
 
  const apiData = {

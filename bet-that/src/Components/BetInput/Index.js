@@ -5,16 +5,17 @@ class BetInput extends React.Component{
     constructor(){
         super()
         this.state = { 
-            pick : "",
+            pick : [],
         }
         this.handleChange = this.handleChange.bind(this)
     }
     handleChange(e){ 
         this.setState({
             pick: e.target.value
-            })
+        })
     }
     render(){
+        let amountWon = ((this.props.userPick-1)  *  this.state.pick )
         return( 
             <div>
                 <label>
@@ -30,7 +31,7 @@ class BetInput extends React.Component{
                             <p>Amount you can win:</p>
                         </span>
                         <span>
-                            {this.state.pick}
+                            <p>{amountWon}</p>
                         </span>
                     </h1>
 
