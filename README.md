@@ -24,11 +24,11 @@ The Odds API is built by an Australian team of developers who wanted to create t
 Data is Collected from European bookmakers.
 
 ## Screen shots
-![home](home.png)
+![home](https://github.com/Jcillo507/Bet-That/blob/feature/bet-that/Home.png)
 
-![list](list.png)
+![list](https://github.com/Jcillo507/Bet-That/blob/feature/bet-that/List.png)
 
-![game](game.png)
+![game](https://github.com/Jcillo507/Bet-That/blob/feature/bet-that/Game.png)
 
 ## Check it out Here:
-JC-GA-P2.surge.sh
+https://JC-GA-P2.surge.sh
