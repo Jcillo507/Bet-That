@@ -26,9 +26,9 @@ Data is Collected from European bookmakers.
 ## Screen shots
 ![home](https://github.com/Jcillo507/Bet-That/blob/feature/bet-that/Home.png)
 
-![list](bet-that/list.png)
+![list](https://github.com/Jcillo507/Bet-That/blob/feature/bet-that/List.png)
 
-![game](bet-that/game.png)
+![game](https://github.com/Jcillo507/Bet-That/blob/feature/bet-that/Game.png)
 
 ## Check it out Here:
 https://JC-GA-P2.surge.sh
