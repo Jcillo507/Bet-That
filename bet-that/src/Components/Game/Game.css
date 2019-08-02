@@ -35,3 +35,13 @@
 .link{
     text-decoration: none;
 }
+@media only screen and (max-width: 600px) {
+     .team {
+         padding: 10px;
+         color: #ADD8E6;
+     }
+     .team-odds {
+         padding: 10px;
+         color: #ADD8E6;
+     }
+}

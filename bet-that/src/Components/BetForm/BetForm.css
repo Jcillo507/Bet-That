@@ -7,7 +7,7 @@
     background-color: #051937;
     color: #ADD8E6;
 }
-.form-text{
+.form-title-text{
     font-size: 3vh;
 }
 
@@ -23,4 +23,7 @@
 
 .form-odds{
     font-weight: 900;
+}
+.form-prompt{
+    margin-top: 10px;
 }

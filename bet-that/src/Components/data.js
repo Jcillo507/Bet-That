@@ -1,13 +1,14 @@
 import axios from 'axios'
 
-const url = 'https://api.the-odds-api.com/v3/odds/?sport=baseball_mlb&region=us&apiKey=460ffe30273e29401411c460e9ba6d62'
+const apiKey = process.env.REACT_APP_API_TOKEN
+const url = `https://api.the-odds-api.com/v3/odds/?sport=baseball_mlb&region=us&apiKey=${apiKey}`
 export const ApiData = async () => {
-    try{
-        const oddsData = await axios.get(url)
-        console.log(oddsData) 
-        return oddsData.data
-    } catch (error){
-        console.log(error)
-    }  
+  try{
+    const oddsData = await axios.get(url) 
+    console.log(oddsData, "data8")
+    return oddsData.data
+  } catch (error){
+    console.log(error)
+  }  
 }
 
