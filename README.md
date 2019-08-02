@@ -24,7 +24,7 @@ The Odds API is built by an Australian team of developers who wanted to create t
 Data is Collected from European bookmakers.
 
 ## Screen shots
-![home](bet-that/home.png)
+![home](https://github.com/Jcillo507/Bet-That/blob/feature/bet-that/Home.png)
 
 ![list](bet-that/list.png)
 
