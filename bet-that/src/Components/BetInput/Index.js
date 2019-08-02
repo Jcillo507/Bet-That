@@ -1,4 +1,5 @@
 import React from 'react';
+import './BetInput.css';
 
 class BetInput extends React.Component {
   constructor() {
@@ -16,7 +17,6 @@ class BetInput extends React.Component {
   }
 
   render() {
-   
     const amountWon = Math.round((this.props.userPick - 1) * this.state.pick);
     return (
       <div>
@@ -34,7 +34,7 @@ class BetInput extends React.Component {
           />
           <h1>
             <span>
-              <p>Total Units Returned:</p>
+              <p>Total Amount Returned:</p>
             </span>
             <span>
               <p>${amountWon}</p>

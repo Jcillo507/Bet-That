@@ -33,7 +33,6 @@ class ListOfGames extends React.Component {
           key={game.teams[0]}
           team1={game.teams[0]}
           team2={game.teams[1]}
-          // time={game.commence_time}
           team1Odds={game.sites[0].odds.h2h[0]}
           team2Odds={game.sites[0].odds.h2h[1]}
         />
