@@ -31,4 +31,4 @@ Data is Collected from European bookmakers.
 ![game](game.png)
 
 ## Check it out Here:
-JC-GA-P2.surge.sh
+https://JC-GA-P2.surge.sh
