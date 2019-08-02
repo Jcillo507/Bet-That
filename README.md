@@ -1,3 +1,5 @@
+https://JC-GA-P2.surge.sh
+
 # Bet-That
 
 ### A Betting Simulator
@@ -30,5 +32,3 @@ Data is Collected from European bookmakers.
 
 ![game](https://github.com/Jcillo507/Bet-That/blob/feature/bet-that/Game.png)
 
-## Check it out Here:
-https://JC-GA-P2.surge.sh
